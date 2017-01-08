@@ -67,31 +67,19 @@ public class SecretSharing {
             coefficients.append(coef)
         }
         
-        
-        for co in coefficients {
-            print("coefficients = \(co)")
-        }
-        
-        
         for i in 0 ..< n {
             let x = BigUInt(i + 1)
             var exp = 1
             var y = coefficients[0]
-            print(y)
             
             while exp < m {
                 var coef = coefficients[exp]
-                print("coef = \(coef)")
                 var xexp = x
                 xexp = xexp.power(BigUInt(exp), modulus: prime)
-                print("xexp = \(xexp)")
                 coef = (coef * xexp) % prime
-                print("coef = \(coef)")
                 y = (y + coef) % prime
-                print("y = \(y)")
 //                y = (y + (coefficients[exp] * (x.power(BigUInt(exp), modulus: prime)) % prime)) % prime
                 exp += 1
-                print("y = \(y)")
             }
             
             let share = encodeShare(m: m, x: i + 1, y: y)
@@ -158,7 +146,6 @@ public class SecretSharing {
 
 extension SecretSharing {
     internal func prng(seed: Data) -> Data {
-        print("seed = \(seed.base64EncodedString())")
         var x = self.order
         var s: Data?
         var pad = Data()
@@ -166,21 +153,12 @@ extension SecretSharing {
         while x >= self.order {
             var input = seed
             input.append(pad)
-            
-            let sha3 = input.sha256().sha256()
-            
-            print("input = \(input.base64EncodedString())")
-            print("sha1 = \(input.sha3(.sha256).base64EncodedString())")
-            print("sha2 = \(input.sha256().base64EncodedString())")
-            print("sha3 = \(sha3.base64EncodedString())")
-            
             s = input.sha256().sha256().subdata(in: 0 ..< (self.bitLength / 8))
             x = BigUInt(s!)
             
             pad.append(UInt8(0))
         }
-        print("s = \(s!.base64EncodedString())")
-        print(BigUInt(s!))
+        
         return s!
         
     }
@@ -191,10 +169,7 @@ extension SecretSharing {
         let x = toNibble(x)
         let prefix = UInt8((m << 4) + x)
         var data = Data(bytes: [prefix])
-        print("final y = \(y)")
-        let yData1 = fillZeroBytes(data: y.serialize(), desiredLength: 32)
-        print("base64 = \(yData1.base64EncodedString())")
-        let yData = fillZeroBytes(data: y.serialize(), desiredLength: 32).subdata(in: (self.bitLength / 8) ..< 32)
+        let yData = fillZeroBytes(data: y.serialize(), desiredLength: 32).subdata(in: (32 - self.bitLength / 8) ..< 32)
         
         data.append(yData)
         return data
