@@ -165,18 +165,18 @@ class SecretSharingTests: XCTestCase {
                 let hexshares:[String] = shares.map{ self.hex(fromData: $0) }
                 XCTAssertEqual(hexshares, definedShares as! [String])
                 
-//                // Test restore
-//                let variants:[[NSData]] = [
-//                    Array(shares[0..<m]),
-//                    Array(shares.reverse()[0..<m]),
-//                    Array(shares[0..<m]).reverse(),
-//                    Array(shares.reverse()[0..<m]).reverse()
-//                ]
-//                
-//                for shs in variants {
-//                    let restoredSecret = try! ssss.joinShares(shs)
-//                    XCTAssertEqual(secret, restoredSecret)
-//                }
+                // Test restore
+                let variants:[[Data]] = [
+                    Array(shares[0..<m]),
+                    Array(shares.reversed()[0..<m]),
+                    Array(shares[0..<m]).reversed(),
+                    Array(shares.reversed()[0..<m]).reversed()
+                ]
+                
+                for shs in variants {
+                    let restoredSecret = ssss.join(shares: shs)
+                    XCTAssertEqual(secret, restoredSecret)
+                }
             }
             
         }

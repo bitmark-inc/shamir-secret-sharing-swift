@@ -89,7 +89,7 @@ public class SecretSharing {
         return shares
     }
     
-    public func join(shares: [Data]) throws -> Data {
+    public func join(shares: [Data]) -> Data {
         let prime = BigInt(self.order)
         let primeU = self.order
         
@@ -112,7 +112,7 @@ public class SecretSharing {
         for point in points {
             xs.insert(point.x)
         }
-        precondition(xs.count == 1, "All shares must have unique indexes (X) values.")
+        precondition(xs.count == points.count, "All shares must have unique indexes (X) values.")
         
         let m = ms.first!
         precondition(points.count >= m, "Not enough shares to restore the secret")
@@ -120,27 +120,27 @@ public class SecretSharing {
         var y = BigInt(0)
         for formula in 0 ..< m {
             var numerator = BigInt(1)
-            var denominator = BigUInt(1)
+            var denominator = BigInt(1)
             
             for count in 0 ..< m {
                 if formula != count { // skip element with i == j
-                    var startposition = BigUInt(points[formula].x)
+                    var startposition = BigInt(points[formula].x)
                     let negnextposition = BigInt(0 - points[count].x)
-                    numerator = (numerator * negnextposition) % prime
+                    numerator = modDistance(numerator * negnextposition, prime)
                     startposition += negnextposition
-                    denominator = (denominator * startposition) % primeU
+                    denominator = modDistance(denominator * startposition, prime)
                 }
             }
             
             var value = BigInt(points[formula].y)
             value *= numerator
-            value = value * BigInt((denominator.inverse(primeU)! % primeU))
-            
+            value = modDistance(value * BigInt(denominator.abs.inverse(primeU)!), prime)
             y += prime
-            y += (value % prime)
+            y = modDistance(y + value, prime)
         }
         
-        return y.abs.serialize().subdata(in: (self.bitLength / 8) ..< 32)
+//        return y.abs.serialize().subdata(in: (self.bitLength / 8) ..< 32)
+        return fillZeroBytes(data: y.abs.serialize(), desiredLength: 32).subdata(in: (32 - self.bitLength / 8) ..< 32)
     }
 }
 
@@ -201,8 +201,10 @@ extension SecretSharing {
         return x == 0 ? 16 : x
     }
     
-    private func fillZeroBytes(data: Data, desiredLength: Int) -> Data {
-        precondition(data.count <= desiredLength, "Data's length should be smaller than desired length")
+    fileprivate func fillZeroBytes(data: Data, desiredLength: Int) -> Data {
+        if data.count > desiredLength {
+            return data.subdata(in: 0 ..< desiredLength)
+        }
         
         var buffers = [UInt8](data)
         
@@ -211,5 +213,15 @@ extension SecretSharing {
         }
         
         return Data(bytes: buffers)
+    }
+    
+    fileprivate func modDistance(_ a: BigInt, _ b: BigInt) -> BigInt {
+        
+        if a.negative {
+            return a.abs.distance(to: b.abs)
+        }
+        else {
+            return BigInt(abs: a.abs % b.abs, negative: a.negative)
+        }
     }
 }
