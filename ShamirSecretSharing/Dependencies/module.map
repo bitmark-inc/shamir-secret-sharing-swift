@@ -1,0 +1,4 @@
+module CShamir [system] {
+    header "shamir.h"
+    export *
+}
