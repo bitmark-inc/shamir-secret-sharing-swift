@@ -1,0 +1,3 @@
+[submodule "ShamirSecretSharing/Dependencies/c-sss"]
+	path = ShamirSecretSharing/Dependencies/c-sss
+	url = https://github.com/fletcher/c-sss

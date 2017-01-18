@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		582DF3921E249E1C00F5DD80 /* ShamirSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3901E249E1C00F5DD80 /* ShamirSecretSharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		582DF3A91E24B42900F5DD80 /* ShamirSecretSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */; };
-		582DF3C41E24B6A000F5DD80 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3BC1E24B6A000F5DD80 /* GLibFacade.c */; };
-		582DF3C61E24B6A000F5DD80 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3BD1E24B6A000F5DD80 /* GLibFacade.h */; };
-		582DF3C81E24B6A000F5DD80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3BE1E24B6A000F5DD80 /* main.c */; };
-		582DF3CA1E24B6A000F5DD80 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3C01E24B6A000F5DD80 /* shamir.c */; };
-		582DF3CC1E24B6A000F5DD80 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3C11E24B6A000F5DD80 /* shamir.h */; };
-		582DF3CE1E24B6A000F5DD80 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3C21E24B6A000F5DD80 /* strtok.c */; };
-		582DF3D01E24B6A000F5DD80 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3C31E24B6A000F5DD80 /* strtok.h */; };
 		582DF3EF1E24C09F00F5DD80 /* ShamirSecretSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */; };
-		582DF3F01E24C0AD00F5DD80 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3BC1E24B6A000F5DD80 /* GLibFacade.c */; };
-		582DF3F11E24C0AF00F5DD80 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3BD1E24B6A000F5DD80 /* GLibFacade.h */; };
-		582DF3F21E24C0B300F5DD80 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3C01E24B6A000F5DD80 /* shamir.c */; };
-		582DF3F31E24C0B500F5DD80 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3C11E24B6A000F5DD80 /* shamir.h */; };
-		582DF3F41E24C0B800F5DD80 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3C21E24B6A000F5DD80 /* strtok.c */; };
-		582DF3F51E24C0BA00F5DD80 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3C31E24B6A000F5DD80 /* strtok.h */; };
+		58872AEF1E2F1EC400FABEF2 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE91E2F1EC400FABEF2 /* GLibFacade.c */; };
+		58872AF01E2F1EC400FABEF2 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */; };
+		58872AF11E2F1EC400FABEF2 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AEB1E2F1EC400FABEF2 /* shamir.c */; };
+		58872AF21E2F1EC400FABEF2 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEC1E2F1EC400FABEF2 /* shamir.h */; };
+		58872AF31E2F1EC400FABEF2 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AED1E2F1EC400FABEF2 /* strtok.c */; };
+		58872AF41E2F1EC400FABEF2 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEE1E2F1EC400FABEF2 /* strtok.h */; };
+		58872AF51E2F201700FABEF2 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */; };
+		58872AF61E2F201C00FABEF2 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE91E2F1EC400FABEF2 /* GLibFacade.c */; };
+		58872AF71E2F201F00FABEF2 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AEB1E2F1EC400FABEF2 /* shamir.c */; };
+		58872AF81E2F202100FABEF2 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEC1E2F1EC400FABEF2 /* shamir.h */; };
+		58872AF91E2F202300FABEF2 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AED1E2F1EC400FABEF2 /* strtok.c */; };
+		58872AFA1E2F202600FABEF2 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEE1E2F1EC400FABEF2 /* strtok.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,15 +31,14 @@
 		582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShamirSecretSharing.swift; sourceTree = "<group>"; };
 		582DF3B51E24B67D00F5DD80 /* ShamirSecretSharing_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShamirSecretSharing_iOS.h; sourceTree = "<group>"; };
 		582DF3B61E24B67D00F5DD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		582DF3BC1E24B6A000F5DD80 /* GLibFacade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLibFacade.c; sourceTree = "<group>"; };
-		582DF3BD1E24B6A000F5DD80 /* GLibFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLibFacade.h; sourceTree = "<group>"; };
-		582DF3BE1E24B6A000F5DD80 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		582DF3BF1E24B6A000F5DD80 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
-		582DF3C01E24B6A000F5DD80 /* shamir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shamir.c; sourceTree = "<group>"; };
-		582DF3C11E24B6A000F5DD80 /* shamir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shamir.h; sourceTree = "<group>"; };
-		582DF3C21E24B6A000F5DD80 /* strtok.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strtok.c; sourceTree = "<group>"; };
-		582DF3C31E24B6A000F5DD80 /* strtok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtok.h; sourceTree = "<group>"; };
 		582DF3E71E24C04100F5DD80 /* ShamirSecretSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShamirSecretSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58872AE91E2F1EC400FABEF2 /* GLibFacade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GLibFacade.c; path = "c-sss/src/GLibFacade.c"; sourceTree = "<group>"; };
+		58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLibFacade.h; path = "c-sss/src/GLibFacade.h"; sourceTree = "<group>"; };
+		58872AEB1E2F1EC400FABEF2 /* shamir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shamir.c; path = "c-sss/src/shamir.c"; sourceTree = "<group>"; };
+		58872AEC1E2F1EC400FABEF2 /* shamir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shamir.h; path = "c-sss/src/shamir.h"; sourceTree = "<group>"; };
+		58872AED1E2F1EC400FABEF2 /* strtok.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = strtok.c; path = "c-sss/src/strtok.c"; sourceTree = "<group>"; };
+		58872AEE1E2F1EC400FABEF2 /* strtok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strtok.h; path = "c-sss/src/strtok.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +100,13 @@
 		582DF3BB1E24B6A000F5DD80 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				582DF3BC1E24B6A000F5DD80 /* GLibFacade.c */,
-				582DF3BD1E24B6A000F5DD80 /* GLibFacade.h */,
-				582DF3BE1E24B6A000F5DD80 /* main.c */,
+				58872AE91E2F1EC400FABEF2 /* GLibFacade.c */,
+				58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */,
+				58872AEB1E2F1EC400FABEF2 /* shamir.c */,
+				58872AEC1E2F1EC400FABEF2 /* shamir.h */,
+				58872AED1E2F1EC400FABEF2 /* strtok.c */,
+				58872AEE1E2F1EC400FABEF2 /* strtok.h */,
 				582DF3BF1E24B6A000F5DD80 /* module.map */,
-				582DF3C01E24B6A000F5DD80 /* shamir.c */,
-				582DF3C11E24B6A000F5DD80 /* shamir.h */,
-				582DF3C21E24B6A000F5DD80 /* strtok.c */,
-				582DF3C31E24B6A000F5DD80 /* strtok.h */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -121,9 +118,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582DF3CC1E24B6A000F5DD80 /* shamir.h in Headers */,
-				582DF3D01E24B6A000F5DD80 /* strtok.h in Headers */,
-				582DF3C61E24B6A000F5DD80 /* GLibFacade.h in Headers */,
+				58872AF21E2F1EC400FABEF2 /* shamir.h in Headers */,
+				58872AF41E2F1EC400FABEF2 /* strtok.h in Headers */,
+				58872AF01E2F1EC400FABEF2 /* GLibFacade.h in Headers */,
 				582DF3921E249E1C00F5DD80 /* ShamirSecretSharing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,9 +129,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582DF3F31E24C0B500F5DD80 /* shamir.h in Headers */,
-				582DF3F51E24C0BA00F5DD80 /* strtok.h in Headers */,
-				582DF3F11E24C0AF00F5DD80 /* GLibFacade.h in Headers */,
+				58872AF81E2F202100FABEF2 /* shamir.h in Headers */,
+				58872AFA1E2F202600FABEF2 /* strtok.h in Headers */,
+				58872AF51E2F201700FABEF2 /* GLibFacade.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,11 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58872AF31E2F1EC400FABEF2 /* strtok.c in Sources */,
 				582DF3A91E24B42900F5DD80 /* ShamirSecretSharing.swift in Sources */,
-				582DF3CA1E24B6A000F5DD80 /* shamir.c in Sources */,
-				582DF3CE1E24B6A000F5DD80 /* strtok.c in Sources */,
-				582DF3C41E24B6A000F5DD80 /* GLibFacade.c in Sources */,
-				582DF3C81E24B6A000F5DD80 /* main.c in Sources */,
+				58872AEF1E2F1EC400FABEF2 /* GLibFacade.c in Sources */,
+				58872AF11E2F1EC400FABEF2 /* shamir.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582DF3F41E24C0B800F5DD80 /* strtok.c in Sources */,
+				58872AF91E2F202300FABEF2 /* strtok.c in Sources */,
 				582DF3EF1E24C09F00F5DD80 /* ShamirSecretSharing.swift in Sources */,
-				582DF3F01E24C0AD00F5DD80 /* GLibFacade.c in Sources */,
-				582DF3F21E24C0B300F5DD80 /* shamir.c in Sources */,
+				58872AF61E2F201C00FABEF2 /* GLibFacade.c in Sources */,
+				58872AF71E2F201F00FABEF2 /* shamir.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

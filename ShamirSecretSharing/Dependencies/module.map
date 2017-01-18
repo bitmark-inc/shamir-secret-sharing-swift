@@ -1,4 +1,4 @@
 module CShamir [system] {
-    header "shamir.h"
+    header "c-sss/src/shamir.h"
     export *
 }
