@@ -1,6 +1,6 @@
 //: Playground - noun: a place where people can play
 
-import ShamirSecretSharing_iOS
+import ShamirSecretSharing
 
 var str = "Hello, Bitmark"
 
