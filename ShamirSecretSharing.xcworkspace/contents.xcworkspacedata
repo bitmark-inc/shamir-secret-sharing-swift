@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ShamirSecretSharing.xcodeproj">
+      location = "group:Example.playground">
    </FileRef>
    <FileRef
-      location = "group:Sample.playground">
+      location = "group:ShamirSecretSharing.xcodeproj">
    </FileRef>
 </Workspace>

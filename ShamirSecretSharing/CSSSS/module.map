@@ -1,0 +1,4 @@
+module CSSSS [system] {
+    header "shamir.h"
+    export *
+}

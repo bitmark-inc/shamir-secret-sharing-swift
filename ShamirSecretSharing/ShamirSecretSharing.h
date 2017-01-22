@@ -2,11 +2,11 @@
 //  ShamirSecretSharing.h
 //  ShamirSecretSharing
 //
-//  Created by Anh Nguyen on 1/10/17.
+//  Created by Anh Nguyen on 1/16/17.
 //  Copyright © 2017 Bitmark. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for ShamirSecretSharing.
 FOUNDATION_EXPORT double ShamirSecretSharingVersionNumber;

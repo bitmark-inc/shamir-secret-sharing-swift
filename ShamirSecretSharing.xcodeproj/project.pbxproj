@@ -7,145 +7,190 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		582DF3921E249E1C00F5DD80 /* ShamirSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DF3901E249E1C00F5DD80 /* ShamirSecretSharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		582DF3A91E24B42900F5DD80 /* ShamirSecretSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */; };
-		582DF3EF1E24C09F00F5DD80 /* ShamirSecretSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */; };
-		58872AEF1E2F1EC400FABEF2 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE91E2F1EC400FABEF2 /* GLibFacade.c */; };
-		58872AF01E2F1EC400FABEF2 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */; };
-		58872AF11E2F1EC400FABEF2 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AEB1E2F1EC400FABEF2 /* shamir.c */; };
-		58872AF21E2F1EC400FABEF2 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEC1E2F1EC400FABEF2 /* shamir.h */; };
-		58872AF31E2F1EC400FABEF2 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AED1E2F1EC400FABEF2 /* strtok.c */; };
-		58872AF41E2F1EC400FABEF2 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEE1E2F1EC400FABEF2 /* strtok.h */; };
-		58872AF51E2F201700FABEF2 /* GLibFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */; };
-		58872AF61E2F201C00FABEF2 /* GLibFacade.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE91E2F1EC400FABEF2 /* GLibFacade.c */; };
-		58872AF71E2F201F00FABEF2 /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AEB1E2F1EC400FABEF2 /* shamir.c */; };
-		58872AF81E2F202100FABEF2 /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEC1E2F1EC400FABEF2 /* shamir.h */; };
-		58872AF91E2F202300FABEF2 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 58872AED1E2F1EC400FABEF2 /* strtok.c */; };
-		58872AFA1E2F202600FABEF2 /* strtok.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872AEE1E2F1EC400FABEF2 /* strtok.h */; };
+		582369A61E305BC40039E26D /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 582369A41E305BC40039E26D /* shamir.c */; };
+		582369A71E305BC40039E26D /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 582369A51E305BC40039E26D /* shamir.h */; };
+		58872ADA1E2F055200FABEF2 /* gmp-iPhoneOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */; };
+		58872ADB1E2F055200FABEF2 /* gmp-iPhoneSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */; };
+		58872ADC1E2F055200FABEF2 /* gmp-MacOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */; };
+		58872ADD1E2F055200FABEF2 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACE1E2F055200FABEF2 /* gmp.h */; };
+		58872AE41E2F066C00FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD01E2F055200FABEF2 /* libgmp.a */; };
+		58872AE51E2F066E00FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD21E2F055200FABEF2 /* libgmp.a */; };
+		58872AE61E2F067100FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD41E2F055200FABEF2 /* libgmp.a */; };
+		58872AE81E2F088500FABEF2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE71E2F088500FABEF2 /* Extensions.swift */; };
+		58BF5D9A1E2C9E9600AF7E85 /* ShamirSecretSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */; };
+		58BF5D9F1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF5D9E1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift */; };
+		58BF5DA11E2C9E9600AF7E85 /* ShamirSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BF5D931E2C9E9600AF7E85 /* ShamirSecretSharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BF7D7E1E2CDB8600AF7E85 /* ShamirSecretSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF7D7D1E2CDB8600AF7E85 /* ShamirSecretSharing.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		58BF5D9B1E2C9E9600AF7E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58BF5D871E2C9E9600AF7E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58BF5D8F1E2C9E9600AF7E85;
+			remoteInfo = ShamirSecretSharing;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		582DF38D1E249E1C00F5DD80 /* ShamirSecretSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShamirSecretSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		582DF3901E249E1C00F5DD80 /* ShamirSecretSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShamirSecretSharing.h; sourceTree = "<group>"; };
-		582DF3911E249E1C00F5DD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShamirSecretSharing.swift; sourceTree = "<group>"; };
-		582DF3B51E24B67D00F5DD80 /* ShamirSecretSharing_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShamirSecretSharing_iOS.h; sourceTree = "<group>"; };
-		582DF3B61E24B67D00F5DD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		582DF3BF1E24B6A000F5DD80 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
-		582DF3E71E24C04100F5DD80 /* ShamirSecretSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShamirSecretSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58872AE91E2F1EC400FABEF2 /* GLibFacade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GLibFacade.c; path = "c-sss/src/GLibFacade.c"; sourceTree = "<group>"; };
-		58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLibFacade.h; path = "c-sss/src/GLibFacade.h"; sourceTree = "<group>"; };
-		58872AEB1E2F1EC400FABEF2 /* shamir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shamir.c; path = "c-sss/src/shamir.c"; sourceTree = "<group>"; };
-		58872AEC1E2F1EC400FABEF2 /* shamir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shamir.h; path = "c-sss/src/shamir.h"; sourceTree = "<group>"; };
-		58872AED1E2F1EC400FABEF2 /* strtok.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = strtok.c; path = "c-sss/src/strtok.c"; sourceTree = "<group>"; };
-		58872AEE1E2F1EC400FABEF2 /* strtok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strtok.h; path = "c-sss/src/strtok.h"; sourceTree = "<group>"; };
+		582369A41E305BC40039E26D /* shamir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shamir.c; sourceTree = "<group>"; };
+		582369A51E305BC40039E26D /* shamir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shamir.h; sourceTree = "<group>"; };
+		58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneOS.h"; sourceTree = "<group>"; };
+		58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneSimulator.h"; sourceTree = "<group>"; };
+		58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-MacOSX.h"; sourceTree = "<group>"; };
+		58872ACE1E2F055200FABEF2 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		58872AD01E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		58872AD21E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		58872AD41E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		58872AD61E2F055200FABEF2 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		58872AE71E2F088500FABEF2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShamirSecretSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BF5D931E2C9E9600AF7E85 /* ShamirSecretSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShamirSecretSharing.h; sourceTree = "<group>"; };
+		58BF5D941E2C9E9600AF7E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BF5D991E2C9E9600AF7E85 /* ShamirSecretSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShamirSecretSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BF5D9E1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShamirSecretSharingTests.swift; sourceTree = "<group>"; };
+		58BF5DA01E2C9E9600AF7E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BF7D7D1E2CDB8600AF7E85 /* ShamirSecretSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShamirSecretSharing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		582DF3891E249E1C00F5DD80 /* Frameworks */ = {
+		58BF5D8C1E2C9E9600AF7E85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58872AE41E2F066C00FABEF2 /* libgmp.a in Frameworks */,
+				58872AE51E2F066E00FABEF2 /* libgmp.a in Frameworks */,
+				58872AE61E2F067100FABEF2 /* libgmp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		582DF3E31E24C04100F5DD80 /* Frameworks */ = {
+		58BF5D961E2C9E9600AF7E85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BF5D9A1E2C9E9600AF7E85 /* ShamirSecretSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		582DF3831E249E1C00F5DD80 = {
+		58872AC81E2F055200FABEF2 /* CSSSS */ = {
 			isa = PBXGroup;
 			children = (
-				582DF3BB1E24B6A000F5DD80 /* Dependencies */,
-				582DF38F1E249E1C00F5DD80 /* ShamirSecretSharing */,
-				582DF3B41E24B67D00F5DD80 /* ShamirSecretSharing_iOS */,
-				582DF38E1E249E1C00F5DD80 /* Products */,
+				582369A41E305BC40039E26D /* shamir.c */,
+				582369A51E305BC40039E26D /* shamir.h */,
+				58872ACA1E2F055200FABEF2 /* GMPLib */,
+				58872AD61E2F055200FABEF2 /* module.map */,
+			);
+			path = CSSSS;
+			sourceTree = "<group>";
+		};
+		58872ACA1E2F055200FABEF2 /* GMPLib */ = {
+			isa = PBXGroup;
+			children = (
+				58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */,
+				58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */,
+				58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */,
+				58872ACE1E2F055200FABEF2 /* gmp.h */,
+				58872ACF1E2F055200FABEF2 /* iphoneos */,
+				58872AD11E2F055200FABEF2 /* iphonesimulator */,
+				58872AD31E2F055200FABEF2 /* macosx */,
+			);
+			path = GMPLib;
+			sourceTree = "<group>";
+		};
+		58872ACF1E2F055200FABEF2 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				58872AD01E2F055200FABEF2 /* libgmp.a */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		58872AD11E2F055200FABEF2 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				58872AD21E2F055200FABEF2 /* libgmp.a */,
+			);
+			path = iphonesimulator;
+			sourceTree = "<group>";
+		};
+		58872AD31E2F055200FABEF2 /* macosx */ = {
+			isa = PBXGroup;
+			children = (
+				58872AD41E2F055200FABEF2 /* libgmp.a */,
+			);
+			path = macosx;
+			sourceTree = "<group>";
+		};
+		58BF5D861E2C9E9600AF7E85 = {
+			isa = PBXGroup;
+			children = (
+				58BF5D921E2C9E9600AF7E85 /* ShamirSecretSharing */,
+				58BF5D9D1E2C9E9600AF7E85 /* ShamirSecretSharingTests */,
+				58BF5D911E2C9E9600AF7E85 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		582DF38E1E249E1C00F5DD80 /* Products */ = {
+		58BF5D911E2C9E9600AF7E85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				582DF38D1E249E1C00F5DD80 /* ShamirSecretSharing.framework */,
-				582DF3E71E24C04100F5DD80 /* ShamirSecretSharing.framework */,
+				58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */,
+				58BF5D991E2C9E9600AF7E85 /* ShamirSecretSharingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		582DF38F1E249E1C00F5DD80 /* ShamirSecretSharing */ = {
+		58BF5D921E2C9E9600AF7E85 /* ShamirSecretSharing */ = {
 			isa = PBXGroup;
 			children = (
-				582DF3901E249E1C00F5DD80 /* ShamirSecretSharing.h */,
-				582DF3911E249E1C00F5DD80 /* Info.plist */,
-				582DF3A81E24B42900F5DD80 /* ShamirSecretSharing.swift */,
+				58BF5D931E2C9E9600AF7E85 /* ShamirSecretSharing.h */,
+				58BF5D941E2C9E9600AF7E85 /* Info.plist */,
+				58872AE71E2F088500FABEF2 /* Extensions.swift */,
+				58BF7D7D1E2CDB8600AF7E85 /* ShamirSecretSharing.swift */,
+				58872AC81E2F055200FABEF2 /* CSSSS */,
 			);
 			path = ShamirSecretSharing;
 			sourceTree = "<group>";
 		};
-		582DF3B41E24B67D00F5DD80 /* ShamirSecretSharing_iOS */ = {
+		58BF5D9D1E2C9E9600AF7E85 /* ShamirSecretSharingTests */ = {
 			isa = PBXGroup;
 			children = (
-				582DF3B51E24B67D00F5DD80 /* ShamirSecretSharing_iOS.h */,
-				582DF3B61E24B67D00F5DD80 /* Info.plist */,
+				58BF5D9E1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift */,
+				58BF5DA01E2C9E9600AF7E85 /* Info.plist */,
 			);
-			path = ShamirSecretSharing_iOS;
-			sourceTree = "<group>";
-		};
-		582DF3BB1E24B6A000F5DD80 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				58872AE91E2F1EC400FABEF2 /* GLibFacade.c */,
-				58872AEA1E2F1EC400FABEF2 /* GLibFacade.h */,
-				58872AEB1E2F1EC400FABEF2 /* shamir.c */,
-				58872AEC1E2F1EC400FABEF2 /* shamir.h */,
-				58872AED1E2F1EC400FABEF2 /* strtok.c */,
-				58872AEE1E2F1EC400FABEF2 /* strtok.h */,
-				582DF3BF1E24B6A000F5DD80 /* module.map */,
-			);
-			path = Dependencies;
+			path = ShamirSecretSharingTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		582DF38A1E249E1C00F5DD80 /* Headers */ = {
+		58BF5D8D1E2C9E9600AF7E85 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58872AF21E2F1EC400FABEF2 /* shamir.h in Headers */,
-				58872AF41E2F1EC400FABEF2 /* strtok.h in Headers */,
-				58872AF01E2F1EC400FABEF2 /* GLibFacade.h in Headers */,
-				582DF3921E249E1C00F5DD80 /* ShamirSecretSharing.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		582DF3E41E24C04100F5DD80 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58872AF81E2F202100FABEF2 /* shamir.h in Headers */,
-				58872AFA1E2F202600FABEF2 /* strtok.h in Headers */,
-				58872AF51E2F201700FABEF2 /* GLibFacade.h in Headers */,
+				582369A71E305BC40039E26D /* shamir.h in Headers */,
+				58872ADA1E2F055200FABEF2 /* gmp-iPhoneOS.h in Headers */,
+				58BF5DA11E2C9E9600AF7E85 /* ShamirSecretSharing.h in Headers */,
+				58872ADD1E2F055200FABEF2 /* gmp.h in Headers */,
+				58872ADB1E2F055200FABEF2 /* gmp-iPhoneSimulator.h in Headers */,
+				58872ADC1E2F055200FABEF2 /* gmp-MacOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		582DF38C1E249E1C00F5DD80 /* ShamirSecretSharing */ = {
+		58BF5D8F1E2C9E9600AF7E85 /* ShamirSecretSharing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 582DF3951E249E1C00F5DD80 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing" */;
+			buildConfigurationList = 58BF5DA41E2C9E9600AF7E85 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing" */;
 			buildPhases = (
-				582DF3881E249E1C00F5DD80 /* Sources */,
-				582DF3891E249E1C00F5DD80 /* Frameworks */,
-				582DF38A1E249E1C00F5DD80 /* Headers */,
-				582DF38B1E249E1C00F5DD80 /* Resources */,
+				58BF5D8B1E2C9E9600AF7E85 /* Sources */,
+				58BF5D8C1E2C9E9600AF7E85 /* Frameworks */,
+				58BF5D8D1E2C9E9600AF7E85 /* Headers */,
+				58BF5D8E1E2C9E9600AF7E85 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,74 +198,75 @@
 			);
 			name = ShamirSecretSharing;
 			productName = ShamirSecretSharing;
-			productReference = 582DF38D1E249E1C00F5DD80 /* ShamirSecretSharing.framework */;
+			productReference = 58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		582DF3E61E24C04100F5DD80 /* ShamirSecretSharing_iOS */ = {
+		58BF5D981E2C9E9600AF7E85 /* ShamirSecretSharingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 582DF3EC1E24C04100F5DD80 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing_iOS" */;
+			buildConfigurationList = 58BF5DA71E2C9E9600AF7E85 /* Build configuration list for PBXNativeTarget "ShamirSecretSharingTests" */;
 			buildPhases = (
-				582DF3E21E24C04100F5DD80 /* Sources */,
-				582DF3E31E24C04100F5DD80 /* Frameworks */,
-				582DF3E41E24C04100F5DD80 /* Headers */,
-				582DF3E51E24C04100F5DD80 /* Resources */,
+				58BF5D951E2C9E9600AF7E85 /* Sources */,
+				58BF5D961E2C9E9600AF7E85 /* Frameworks */,
+				58BF5D971E2C9E9600AF7E85 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				58BF5D9C1E2C9E9600AF7E85 /* PBXTargetDependency */,
 			);
-			name = ShamirSecretSharing_iOS;
-			productName = ShamirSecretSharing_iOS;
-			productReference = 582DF3E71E24C04100F5DD80 /* ShamirSecretSharing.framework */;
-			productType = "com.apple.product-type.framework";
+			name = ShamirSecretSharingTests;
+			productName = ShamirSecretSharingTests;
+			productReference = 58BF5D991E2C9E9600AF7E85 /* ShamirSecretSharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		582DF3841E249E1C00F5DD80 /* Project object */ = {
+		58BF5D871E2C9E9600AF7E85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Bitmark;
 				TargetAttributes = {
-					582DF38C1E249E1C00F5DD80 = {
+					58BF5D8F1E2C9E9600AF7E85 = {
 						CreatedOnToolsVersion = 8.2;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					582DF3E61E24C04100F5DD80 = {
+					58BF5D981E2C9E9600AF7E85 = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 582DF3871E249E1C00F5DD80 /* Build configuration list for PBXProject "ShamirSecretSharing" */;
+			buildConfigurationList = 58BF5D8A1E2C9E9600AF7E85 /* Build configuration list for PBXProject "ShamirSecretSharing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 582DF3831E249E1C00F5DD80;
-			productRefGroup = 582DF38E1E249E1C00F5DD80 /* Products */;
+			mainGroup = 58BF5D861E2C9E9600AF7E85;
+			productRefGroup = 58BF5D911E2C9E9600AF7E85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				582DF38C1E249E1C00F5DD80 /* ShamirSecretSharing */,
-				582DF3E61E24C04100F5DD80 /* ShamirSecretSharing_iOS */,
+				58BF5D8F1E2C9E9600AF7E85 /* ShamirSecretSharing */,
+				58BF5D981E2C9E9600AF7E85 /* ShamirSecretSharingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		582DF38B1E249E1C00F5DD80 /* Resources */ = {
+		58BF5D8E1E2C9E9600AF7E85 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		582DF3E51E24C04100F5DD80 /* Resources */ = {
+		58BF5D971E2C9E9600AF7E85 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,32 +276,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		582DF3881E249E1C00F5DD80 /* Sources */ = {
+		58BF5D8B1E2C9E9600AF7E85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58872AF31E2F1EC400FABEF2 /* strtok.c in Sources */,
-				582DF3A91E24B42900F5DD80 /* ShamirSecretSharing.swift in Sources */,
-				58872AEF1E2F1EC400FABEF2 /* GLibFacade.c in Sources */,
-				58872AF11E2F1EC400FABEF2 /* shamir.c in Sources */,
+				58BF7D7E1E2CDB8600AF7E85 /* ShamirSecretSharing.swift in Sources */,
+				58872AE81E2F088500FABEF2 /* Extensions.swift in Sources */,
+				582369A61E305BC40039E26D /* shamir.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		582DF3E21E24C04100F5DD80 /* Sources */ = {
+		58BF5D951E2C9E9600AF7E85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58872AF91E2F202300FABEF2 /* strtok.c in Sources */,
-				582DF3EF1E24C09F00F5DD80 /* ShamirSecretSharing.swift in Sources */,
-				58872AF61E2F201C00FABEF2 /* GLibFacade.c in Sources */,
-				58872AF71E2F201F00FABEF2 /* shamir.c in Sources */,
+				58BF5D9F1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		58BF5D9C1E2C9E9600AF7E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58BF5D8F1E2C9E9600AF7E85 /* ShamirSecretSharing */;
+			targetProxy = 58BF5D9B1E2C9E9600AF7E85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		582DF3931E249E1C00F5DD80 /* Debug */ = {
+		58BF5DA21E2C9E9600AF7E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,7 +326,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -296,20 +346,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Dependencies";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ShamirSecretSharing/CSSSS";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		582DF3941E249E1C00F5DD80 /* Release */ = {
+		58BF5DA31E2C9E9600AF7E85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +380,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -344,32 +394,37 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Dependencies";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ShamirSecretSharing/CSSSS";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		582DF3961E249E1C00F5DD80 /* Debug */ = {
+		58BF5DA51E2C9E9600AF7E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = ShamirSecretSharing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/iphoneos",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/macosx",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitmark.ShamirSecretSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -378,21 +433,25 @@
 			};
 			name = Debug;
 		};
-		582DF3971E249E1C00F5DD80 /* Release */ = {
+		58BF5DA61E2C9E9600AF7E85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = ShamirSecretSharing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/iphoneos",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator",
+					"$(PROJECT_DIR)/ShamirSecretSharing/CSSSS/GMPLib/macosx",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitmark.ShamirSecretSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -400,80 +459,61 @@
 			};
 			name = Release;
 		};
-		582DF3ED1E24C04100F5DD80 /* Debug */ = {
+		58BF5DA81E2C9E9600AF7E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ShamirSecretSharing_iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ShamirSecretSharingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.ShamirSecretSharing-iOS";
-				PRODUCT_NAME = ShamirSecretSharing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmark.ShamirSecretSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		582DF3EE1E24C04100F5DD80 /* Release */ = {
+		58BF5DA91E2C9E9600AF7E85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ShamirSecretSharing_iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ShamirSecretSharingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmark.ShamirSecretSharing-iOS";
-				PRODUCT_NAME = ShamirSecretSharing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmark.ShamirSecretSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		582DF3871E249E1C00F5DD80 /* Build configuration list for PBXProject "ShamirSecretSharing" */ = {
+		58BF5D8A1E2C9E9600AF7E85 /* Build configuration list for PBXProject "ShamirSecretSharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				582DF3931E249E1C00F5DD80 /* Debug */,
-				582DF3941E249E1C00F5DD80 /* Release */,
+				58BF5DA21E2C9E9600AF7E85 /* Debug */,
+				58BF5DA31E2C9E9600AF7E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		582DF3951E249E1C00F5DD80 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing" */ = {
+		58BF5DA41E2C9E9600AF7E85 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				582DF3961E249E1C00F5DD80 /* Debug */,
-				582DF3971E249E1C00F5DD80 /* Release */,
+				58BF5DA51E2C9E9600AF7E85 /* Debug */,
+				58BF5DA61E2C9E9600AF7E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		582DF3EC1E24C04100F5DD80 /* Build configuration list for PBXNativeTarget "ShamirSecretSharing_iOS" */ = {
+		58BF5DA71E2C9E9600AF7E85 /* Build configuration list for PBXNativeTarget "ShamirSecretSharingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				582DF3ED1E24C04100F5DD80 /* Debug */,
-				582DF3EE1E24C04100F5DD80 /* Release */,
+				58BF5DA81E2C9E9600AF7E85 /* Debug */,
+				58BF5DA91E2C9E9600AF7E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 582DF3841E249E1C00F5DD80 /* Project object */;
+	rootObject = 58BF5D871E2C9E9600AF7E85 /* Project object */;
 }
