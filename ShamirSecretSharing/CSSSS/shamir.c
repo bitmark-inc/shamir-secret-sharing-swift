@@ -29,7 +29,7 @@
 #include <unistd.h>
 #include <assert.h>
 
-#include <gmp.h>
+#include "gmp.h"
 
 #include "shamir.h"
 
