@@ -5,6 +5,9 @@
       location = "group:Example.playground">
    </FileRef>
    <FileRef
+      location = "group:SwiftSSSS.podspec">
+   </FileRef>
+   <FileRef
       location = "group:ShamirSecretSharing.xcodeproj">
    </FileRef>
 </Workspace>
