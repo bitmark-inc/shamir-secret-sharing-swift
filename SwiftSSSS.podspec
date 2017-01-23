@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "SwiftSSSS"
-  spec.version = "0.0.1"
+  spec.version = "0.0.3"
   spec.summary = "Shamir secret sharing wrapper on Swift."
   spec.homepage = "https://github.com/bitmark-inc/shamir-secret-sharing-swift"
   spec.license = { type: 'GPLv2', file: 'LICENSE' }
