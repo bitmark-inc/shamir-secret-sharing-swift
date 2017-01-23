@@ -12,10 +12,12 @@ Pod::Spec.new do |spec|
   spec.source = { git: "https://github.com/bitmark-inc/shamir-secret-sharing-swift.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = 'ShamirSecretSharing/**/*.{h,swift,c}'
   spec.xcconfig = { "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS",
-                    "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib"}
+                    "LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/iphoneos",
+                    "LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator",
+                    "LIBRARY_SEARCH_PATHS[sdk=macosx*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/macosx"}
 
-  spec.preserve_paths = "ShamirSecretSharing/CSSSS/module.map"
-  spec.ios.vendored_libraries = "ShamirSecretSharing/CSSSS/GMPLib/iphoneos/libgmp-iphoneos.a",
+  spec.preserve_paths = "ShamirSecretSharing/CSSSS/module.map", "ShamirSecretSharing/CSSSS/GMPLib/*.h"
+  spec.vendored_libraries = "ShamirSecretSharing/CSSSS/GMPLib/iphoneos/libgmp-iphoneos.a",
                             "ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator/libgmp-iphonesimulator.a",
                             "ShamirSecretSharing/CSSSS/GMPLib/macosx/libgmp-macosx.a"
 end
