@@ -25,6 +25,11 @@ public class ShamirSecretSharing {
         }
         
         let error = CSSSS.wrapped_split(sharesCPointer, secret.utf8String, 0, Int32(t), Int32(n), false, nil, false, randomBytesPointer, randomByteString.characters.count)
+        
+        defer {
+            // Free memory
+            _ = CSSSS.wrapped_free_shares(sharesCPointer, Int32(n))
+        }
 
         if error.rawValue == 0 {
             var i = 0
@@ -37,9 +42,6 @@ public class ShamirSecretSharing {
                 
                 i += 1
             }
-            
-            // Free memory
-            _ = CSSSS.wrapped_free_shares(sharesCPointer, Int32(n))
             
             return shares
         }
