@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		582369A61E305BC40039E26D /* shamir.c in Sources */ = {isa = PBXBuildFile; fileRef = 582369A41E305BC40039E26D /* shamir.c */; };
 		582369A71E305BC40039E26D /* shamir.h in Headers */ = {isa = PBXBuildFile; fileRef = 582369A51E305BC40039E26D /* shamir.h */; };
-		58872ADA1E2F055200FABEF2 /* gmp-iPhoneOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */; };
-		58872ADB1E2F055200FABEF2 /* gmp-iPhoneSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */; };
-		58872ADC1E2F055200FABEF2 /* gmp-MacOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */; };
+		58675F841E35C17A004AE205 /* gmp-iPhoneOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 58675F831E35C17A004AE205 /* gmp-iPhoneOS.h */; };
+		58675F861E35C187004AE205 /* gmp-iPhoneSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 58675F851E35C187004AE205 /* gmp-iPhoneSimulator.h */; };
+		58675F881E35C18D004AE205 /* gmp-MacOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 58675F871E35C18D004AE205 /* gmp-MacOSX.h */; };
 		58872ADD1E2F055200FABEF2 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACE1E2F055200FABEF2 /* gmp.h */; };
 		58872AE41E2F066C00FABEF2 /* libgmp-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */; };
 		58872AE51E2F066E00FABEF2 /* libgmp-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */; };
@@ -36,9 +36,9 @@
 /* Begin PBXFileReference section */
 		582369A41E305BC40039E26D /* shamir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shamir.c; sourceTree = "<group>"; };
 		582369A51E305BC40039E26D /* shamir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shamir.h; sourceTree = "<group>"; };
-		58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneOS.h"; sourceTree = "<group>"; };
-		58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneSimulator.h"; sourceTree = "<group>"; };
-		58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-MacOSX.h"; sourceTree = "<group>"; };
+		58675F831E35C17A004AE205 /* gmp-iPhoneOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneOS.h"; sourceTree = "<group>"; };
+		58675F851E35C187004AE205 /* gmp-iPhoneSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneSimulator.h"; sourceTree = "<group>"; };
+		58675F871E35C18D004AE205 /* gmp-MacOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-MacOSX.h"; sourceTree = "<group>"; };
 		58872ACE1E2F055200FABEF2 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
 		58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-iphoneos.a"; sourceTree = "<group>"; };
 		58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-iphonesimulator.a"; sourceTree = "<group>"; };
@@ -90,9 +90,6 @@
 		58872ACA1E2F055200FABEF2 /* GMPLib */ = {
 			isa = PBXGroup;
 			children = (
-				58872ACB1E2F055200FABEF2 /* gmp-iPhoneOS.h */,
-				58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */,
-				58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */,
 				58872ACE1E2F055200FABEF2 /* gmp.h */,
 				58872ACF1E2F055200FABEF2 /* iphoneos */,
 				58872AD11E2F055200FABEF2 /* iphonesimulator */,
@@ -104,6 +101,7 @@
 		58872ACF1E2F055200FABEF2 /* iphoneos */ = {
 			isa = PBXGroup;
 			children = (
+				58675F831E35C17A004AE205 /* gmp-iPhoneOS.h */,
 				58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */,
 			);
 			path = iphoneos;
@@ -112,6 +110,7 @@
 		58872AD11E2F055200FABEF2 /* iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
+				58675F851E35C187004AE205 /* gmp-iPhoneSimulator.h */,
 				58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */,
 			);
 			path = iphonesimulator;
@@ -120,6 +119,7 @@
 		58872AD31E2F055200FABEF2 /* macosx */ = {
 			isa = PBXGroup;
 			children = (
+				58675F871E35C18D004AE205 /* gmp-MacOSX.h */,
 				58872AD41E2F055200FABEF2 /* libgmp-macosx.a */,
 			);
 			path = macosx;
@@ -172,11 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				582369A71E305BC40039E26D /* shamir.h in Headers */,
-				58872ADA1E2F055200FABEF2 /* gmp-iPhoneOS.h in Headers */,
 				58BF5DA11E2C9E9600AF7E85 /* ShamirSecretSharing.h in Headers */,
+				58675F881E35C18D004AE205 /* gmp-MacOSX.h in Headers */,
+				58675F861E35C187004AE205 /* gmp-iPhoneSimulator.h in Headers */,
+				58675F841E35C17A004AE205 /* gmp-iPhoneOS.h in Headers */,
 				58872ADD1E2F055200FABEF2 /* gmp.h in Headers */,
-				58872ADB1E2F055200FABEF2 /* gmp-iPhoneSimulator.h in Headers */,
-				58872ADC1E2F055200FABEF2 /* gmp-MacOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
