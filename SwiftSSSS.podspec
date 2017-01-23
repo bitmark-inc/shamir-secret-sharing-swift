@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
                     "LIBRARY_SEARCH_PATHS[sdk=macosx*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/macosx"}
 
   spec.preserve_paths = "ShamirSecretSharing/CSSSS/module.map"
-  spec.vendored_libraries = "ShamirSecretSharing/CSSSS/GMPLib/iphoneos/libgmp.a",
-                            "ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator/libgmp.a",
-                            "ShamirSecretSharing/CSSSS/GMPLib/macosx/libgmp.a"
+  spec.ios.vendored_libraries = "ShamirSecretSharing/CSSSS/GMPLib/iphoneos/libgmp-iphoneos.a",
+                            "ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator/libgmp-iphonesimulator.a",
+                            "ShamirSecretSharing/CSSSS/GMPLib/macosx/libgmp-macosx.a"
 end

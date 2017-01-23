@@ -13,9 +13,9 @@
 		58872ADB1E2F055200FABEF2 /* gmp-iPhoneSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */; };
 		58872ADC1E2F055200FABEF2 /* gmp-MacOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */; };
 		58872ADD1E2F055200FABEF2 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 58872ACE1E2F055200FABEF2 /* gmp.h */; };
-		58872AE41E2F066C00FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD01E2F055200FABEF2 /* libgmp.a */; };
-		58872AE51E2F066E00FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD21E2F055200FABEF2 /* libgmp.a */; };
-		58872AE61E2F067100FABEF2 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD41E2F055200FABEF2 /* libgmp.a */; };
+		58872AE41E2F066C00FABEF2 /* libgmp-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */; };
+		58872AE51E2F066E00FABEF2 /* libgmp-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */; };
+		58872AE61E2F067100FABEF2 /* libgmp-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58872AD41E2F055200FABEF2 /* libgmp-macosx.a */; };
 		58872AE81E2F088500FABEF2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58872AE71E2F088500FABEF2 /* Extensions.swift */; };
 		58BF5D9A1E2C9E9600AF7E85 /* ShamirSecretSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */; };
 		58BF5D9F1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF5D9E1E2C9E9600AF7E85 /* ShamirSecretSharingTests.swift */; };
@@ -40,9 +40,9 @@
 		58872ACC1E2F055200FABEF2 /* gmp-iPhoneSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-iPhoneSimulator.h"; sourceTree = "<group>"; };
 		58872ACD1E2F055200FABEF2 /* gmp-MacOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gmp-MacOSX.h"; sourceTree = "<group>"; };
 		58872ACE1E2F055200FABEF2 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
-		58872AD01E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
-		58872AD21E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
-		58872AD41E2F055200FABEF2 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-iphoneos.a"; sourceTree = "<group>"; };
+		58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-iphonesimulator.a"; sourceTree = "<group>"; };
+		58872AD41E2F055200FABEF2 /* libgmp-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-macosx.a"; sourceTree = "<group>"; };
 		58872AD61E2F055200FABEF2 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		58872AE71E2F088500FABEF2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		58BF5D901E2C9E9600AF7E85 /* ShamirSecretSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShamirSecretSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,9 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58872AE41E2F066C00FABEF2 /* libgmp.a in Frameworks */,
-				58872AE51E2F066E00FABEF2 /* libgmp.a in Frameworks */,
-				58872AE61E2F067100FABEF2 /* libgmp.a in Frameworks */,
+				58872AE41E2F066C00FABEF2 /* libgmp-iphoneos.a in Frameworks */,
+				58872AE51E2F066E00FABEF2 /* libgmp-iphonesimulator.a in Frameworks */,
+				58872AE61E2F067100FABEF2 /* libgmp-macosx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		58872ACF1E2F055200FABEF2 /* iphoneos */ = {
 			isa = PBXGroup;
 			children = (
-				58872AD01E2F055200FABEF2 /* libgmp.a */,
+				58872AD01E2F055200FABEF2 /* libgmp-iphoneos.a */,
 			);
 			path = iphoneos;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 		58872AD11E2F055200FABEF2 /* iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
-				58872AD21E2F055200FABEF2 /* libgmp.a */,
+				58872AD21E2F055200FABEF2 /* libgmp-iphonesimulator.a */,
 			);
 			path = iphonesimulator;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 		58872AD31E2F055200FABEF2 /* macosx */ = {
 			isa = PBXGroup;
 			children = (
-				58872AD41E2F055200FABEF2 /* libgmp.a */,
+				58872AD41E2F055200FABEF2 /* libgmp-macosx.a */,
 			);
 			path = macosx;
 			sourceTree = "<group>";
