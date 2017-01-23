@@ -11,8 +11,10 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source = { git: "https://github.com/bitmark-inc/shamir-secret-sharing-swift.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = 'ShamirSecretSharing/**/*.{h,swift,a,c}'
-  spec.xcconfig = { "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS"}
-
+  spec.xcconfig = { "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS",
+                    "LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/iphoneos",
+                    "LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/iphonesimulator",
+                    "LIBRARY_SEARCH_PATHS[sdk=macosx*]" => "$(PODS_ROOT)/SwiftSSSS/ShamirSecretSharing/CSSSS/GMPLib/macosx"}
 
   spec.preserve_paths = 'ShamirSecretSharing/CSSSS/module.map'
 end
